@@ -9,7 +9,7 @@ NonScaffoldedRails::Application.routes.draw do
   match 'contact_us' => 'info#contact', :as => 'contact'
   # URL /contact will map to contact action of the info controller.
   
-  match 'posts' => 'posts#index', :as => 'posts'
+  match 'blog' => 'posts#index', :as => 'posts'
   # URL /posts will map to the index action of the posts controller.
   
   # The priority is based upon order of creation:

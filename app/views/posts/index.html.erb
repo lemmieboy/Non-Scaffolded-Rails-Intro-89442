@@ -1,1 +1,11 @@
 <h2>Company Blog</h2>
+
+<!-- Loop through all the posts you get from
+     the controller. Title goes in an h3 tag.
+     The content goes in a p tag. -->
+     
+<% @posts.each do |post| %>
+  <h3><%= post.title %></h3>
+  <p><%= post.created_at %></p>
+  <p><%= post.content %></p>
+<% end %>
