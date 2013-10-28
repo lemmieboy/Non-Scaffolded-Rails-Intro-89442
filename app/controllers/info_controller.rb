@@ -3,6 +3,9 @@ class InfoController < ApplicationController
   # all empty. We create here such that it is
   # obvious which views exist.
   
+  # Three routes have been defined for these
+  # actions in the confin/routes.rb file.
+  
   def index
   end # Automatically loads: app/views/info/index.html.erb
   
