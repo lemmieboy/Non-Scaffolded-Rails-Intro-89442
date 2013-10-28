@@ -3,7 +3,7 @@ NonScaffoldedRails::Application.routes.draw do
   root :to => 'info#index'
   # URL / will map to index action of the info controller.
   
-  match 'about_company_name' => 'info#about', :as => 'about'
+  match 'about_us' => 'info#about', :as => 'about'
   # URL /about will map to about action of the info controller.
   
   match 'contact_us' => 'info#contact', :as => 'contact'
