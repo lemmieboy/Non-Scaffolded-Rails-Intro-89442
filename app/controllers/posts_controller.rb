@@ -19,7 +19,18 @@ class PostsController < ApplicationController
   end # Load the app/views/posts/new.html.erb
   
   def create
+    # Create a new post object with the data the user
+    # submitted from the new view form.
+    @post = Post.new(params[:post])
     
+    if (@post.save)
+      # Validations pass we direction to the index action.
+      redirect_to :action => :index
+    else
+      # Validations fail we reuse the view associated with the
+      # new action.
+      render :action => :new
+    end
     
   end # Only loads a view on error, otherwise redirects.
 end
