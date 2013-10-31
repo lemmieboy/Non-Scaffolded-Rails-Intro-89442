@@ -13,4 +13,13 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
   end # Auto load the app/views/posts/show.html.erb
+  
+  def new
+    @post = Post.new
+  end # Load the app/views/posts/new.html.erb
+  
+  def create
+    
+    
+  end # Only loads a view on error, otherwise redirects.
 end
